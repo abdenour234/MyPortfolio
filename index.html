@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>MyPortfolio</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Abdenour Chenouf</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#Profile">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Experience">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="mobile-nav">
+        <div class="logo">Abdenour Chenouf</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu-links">
+            <li><a href="#Home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#About" onclick="toggleMenu()">About</a></li>
+            <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </nav>
+<section id="Profile">
+    <div class="section__pic-container">
+        <img src="assets/Me.png" alt="Abdenour Chenouf" style="border-radius: 50%;">
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hi I'm</p>
+        <h1 class="title">Abdenour Chenouf</h1>
+        <p class="section__text__p2">Data Scientist/Engineer Student</p>
+        <div class="btn-container">
+            <button class="btn btn-color1" onclick="window.open('assets/CV.pdf')">Download CV</button>
+            <button class="btn btn-color2" onclick="window.location.href='./#Contact'">Contact Me</button>
+        </div>
+        <div id="socials-section">
+            <img src="./assets/linkedin.png" alt="MyLinkedIn" class="icon" onclick="window.location.href='https://www.linkedin.com/in/chenoufabdenour/'">
+            <img src="./assets/github.png" alt="MyGithub" class="icon" onclick="window.location.href='https://github.com/abdenour234'">
+        </div>
+    </div>
+</section>
+<section id="about">
+    <p class="section__text__p1">Get To Know More:</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="./assets/ME3.jpg" alt="Profile"  class="about-pic">
+        </div>
+    <div class="about-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <img src="./assets/experience.png" alt="experience" class="icon">
+                <h3>Experience</h3>
+                <p> 2 month <br>Intern Data Scientist At N+One Datacenters</p>
+            </div>
+            <div class="details-container">
+                <img src="./assets/education.png" alt="experience" class="icon">
+                <h3>Education</h3>
+                <p>Engineering Degree<br>Data Science And Cloud Computing <br> ENSA Oujda</p>
+            </div>
+
+        </div>
+        <div class="text-container">
+            <p> I’m Abdenour Chenouf, a data science and cloud computing student at ENSA Oujda with hands-on experience in data engineering. During my internship at N+One DataCenters, I contributed to two key projects: developing an ETL pipeline to process and visualize customer ticket data using Streamlit, and building a Retrieval-Augmented Generation (RAG) chatbot to enhance customer support. I’m passionate about solving real-world data problems and leveraging machine learning, cloud technologies, and data engineering to create impactful solutions. I’m also actively involved in the Data Science and Cloud Computing Club at ENSA Oujda, where I collaborate on projects and events aimed at advancing AI and data science education.</p>
+        </div>
+    </div>
+    </div>
+    <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#Experience'">
+</section>
+
+<section id="Experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-containers">
+                <h2 class="experience-sub-title">Technical Skills</h2>
+                <div class="article-container">
+                    <div class="article-group visible">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Data Engineering</h3>
+                                <p>ETL Pipeline, Data Transformation</p>
+                                <div class="hover-details">
+                                    <h4>Advanced Data Engineering Skills</h4>
+                                    <ul>
+                                        <li>Designing scalable ETL pipelines</li>
+                                        <li>Data cleansing and preprocessing</li>
+                                        <li>Performance optimization techniques</li>
+                                        <li>Cloud-based data integration</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Databases</h3>
+                                <p>MySQL, PLSQL, MongoDB, Redis</p>
+                                <div class="hover-details">
+                                    <h4>Database Management Expertise</h4>
+                                    <ul>
+                                        <li>Complex query optimization</li>
+                                        <li>Database schema design</li>
+                                        <li>NoSQL and relational database management</li>
+                                        <li>Performance tuning and indexing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="article-group hidden">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Cloud Computing</h3>
+                                <p>OCI, AWS</p>
+                                <div class="hover-details">
+                                    <h4>Cloud Infrastructure Skills</h4>
+                                    <ul>
+                                        <li>Cloud architecture design</li>
+                                        <li>Serverless computing</li>
+                                        <li>Scalable cloud solutions</li>
+                                        <li>Cloud security best practices</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Programming</h3>
+                                <p>Python, Java, R, C</p>
+                                <div class="hover-details">
+                                    <h4>Multi-Language Programming Expertise</h4>
+                                    <ul>
+                                        <li>Object-oriented programming</li>
+                                        <li>Functional programming concepts</li>
+                                        <li>Algorithm development</li>
+                                        <li>Cross-language integration</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="article-group hidden">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Data Visualization</h3>
+                                <p>Streamlit, Matplotlib, Seaborn, PowerBI</p>
+                                <div class="hover-details">
+                                    <h4>Advanced Visualization Techniques</h4>
+                                    <ul>
+                                        <li>Interactive dashboard creation</li>
+                                        <li>Statistical data representation</li>
+                                        <li>Custom visualization development</li>
+                                        <li>Data storytelling</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Machine Learning</h3>
+                                <p>Scikit-learn, PyTorch, TensorFlow</p>
+                                <div class="hover-details">
+                                    <h4>Machine Learning Proficiency</h4>
+                                    <ul>
+                                        <li>Model development and training</li>
+                                        <li>Deep learning techniques</li>
+                                        <li>Feature engineering</li>
+                                        <li>Predictive analytics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="article-group hidden">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Soft Skills</h3>
+                                <p>Problem Solving, Teamwork, Communication</p>
+                                <div class="hover-details">
+                                    <h4>Professional Competencies</h4>
+                                    <ul>
+                                        <li>Collaborative team dynamics</li>
+                                        <li>Effective communication strategies</li>
+                                        <li>Critical thinking and analysis</li>
+                                        <li>Adaptive problem-solving</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="slider-container">
+                        <button class="slider-arrow" onclick="changeSlide(-1)">←</button>
+                        <button class="slider-arrow" onclick="changeSlide(1)">→</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    let currentGroupIndex = 0;
+    const articleGroups = document.querySelectorAll('.article-group');
+
+    function changeSlide(direction) {
+        // Remove visibility from current group
+        articleGroups[currentGroupIndex].classList.add('hidden');
+        
+        // Update index with wrapping
+        currentGroupIndex = (currentGroupIndex + direction + articleGroups.length) % articleGroups.length;
+        
+        // Show new group
+        articleGroups[currentGroupIndex].classList.remove('hidden');
+    }
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>
